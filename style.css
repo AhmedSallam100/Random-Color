@@ -99,3 +99,27 @@ li {
 .refresh-btn:hover {
   filter: brightness(116%);
 }
+.ravox {
+  font-weight: bold;
+  color: var(--yellow-color);
+}
+.copyright {
+  position: fixed;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  writing-mode: vertical-lr;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: var(--purple-color);
+}
+.copyright-2 {
+  position: fixed;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  writing-mode: vertical-lr;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: var(--purple-color);
+}
