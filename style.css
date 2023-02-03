@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800;1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+:root {
+  --wight-color: #fff;
+  --card1-color: #211c3d;
+  --card2-color: #2a2544;
+  --purple-color: #6b00e3;
+  --purple-color-alt: #3a1074;
+  --header-color: #1d1933;
+  --yellow-color: #f28600;
+  --background-color: #121128;
+  --tran-2: all 0.2s ease;
+  --tran-3: all 0.3s ease;
+  --tran-4: all 0.4s ease;
+  --tran-5: all 0.5s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: var(--wight-color); */
+}
+body {
+  color: var(--wight-color);
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--background-color);
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+::selection {
+  color: var(--wight-color);
+  background-color: var(--purple-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  box-shadow: 0px 0px 30px 30px var(--purple-color);
+}
+.container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .color {
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+  background-color: var(--card1-color);
+  transition: transform 0.2s ease;
+}
+.container .color:active {
+  transform: scale(0.95);
+}
+.color .rect-box {
+  width: 185px;
+  height: 188px;
+  border-radius: 6px;
+  /* background-color: var(--card2-color); */
+  background-color: #473478;
+  transition: var(--tran-2);
+}
+.color:hover .rect-box {
+  filter: brightness(116%);
+}
+.color .hex-value {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.refresh-btn {
+  border: none;
+  color: var(--wight-color);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  position: fixed;
+  left: 50%;
+  bottom: 65px;
+  cursor: pointer;
+  transform: translateX(-50%);
+  transition: var(--tran-3);
+  background-color: var(--purple-color);
+}
+.refresh-btn:hover {
+  filter: brightness(116%);
+}
